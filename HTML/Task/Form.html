@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Form Application</h1>
+    <form action="Task/submit.html" method="post">
+    <fieldset><br>
+        <legend>TATA AIA APPLICATION</legend>
+    <label for="fullname">Full Name:</label>
+    <input type="Text" id="fullname" name="fullname" placeholder="Full Name" required><br><br>
+    <label for="aboutself">About Yourself:</label><br>
+    <textarea name="aboutself" cols="32" rows="5"></textarea><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="abc@example.com" cols="50" required><br><br>
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" pattern=".{8,}" required><br><br>
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" id="number" name="number" placeholder="1234567890" pattern="[0-9]{10}" required><br><br>
+    <label for="website">Website:</label>
+    <input type="text" id="website" name="website"><br><br>
+    <label for="Skills">Skills:</label>
+    <select id="skills" name="skills">
+        <option value="Frontend" selected>HTML</option>
+        <option value="Backend">CSS</option>
+        <option value="Database">JavaScript</option>
+    </select><br><br>
+    <label for="Gender">Gender:</label>
+    <input type="radio" id="male" name="Gender" value="Gender" checked />
+    <label for="Gender">Male</label>
+    <input type="radio" id="female" name="Gender" value="Gender" />
+    <label for="Gender">Female</label>
+    <label for="color">Color:</label><br><br>
+    <input type="color" id="color" name="color" value="#0000"><br><br>
+    <label for="experience">Experience Level:</label>
+    <input type="range" id="experience" name="experience" min="0" max="100"><br><br>
+    <label for="search">Search Input:</label>
+    <input type="search" id="search" name="search"><br><br>
+     <label for="dob">Date of Birth:</label>
+    <input type="date"  id="dob" name="dob" max="2005-12-31"> <br><br>
+    <label for="time">Available Time:</label>
+    <input type="time" id="time" name="time" min="09:00" max="18:30"> <br><br>
+    <label for="joining">Joining Month:</label>
+    <input type="date" id="joining" name="joining" value="2026-01-09"> <br><br>
+    <label for="week">Training Week:</label>
+    <input type="week" id="week" name="week" value="2026-W07" readonly> <br><br>
+    <label for="datetime">Interview Slot:</label>
+    <input type="datetime-local" id="datetime" name="interview"> <br><br>
+    <label for="technology">Technology:</label>
+    <select id="technology" name="technology">
+        <option>.Net</option>
+        <option>Angular</option>
+        <option>Java</option>
+        <option>ReactJS</option>
+        <option>QA</option>
+    </select><br><br>
+    <label for="resume">Upload Resume (PDF only):</label>
+    <input type="file"id="resume"name="resume" accept=".pdf"><br><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+    <button type="button">Click Me</button>
+    </fieldset>
+    </form>
+</body>
+</html>
